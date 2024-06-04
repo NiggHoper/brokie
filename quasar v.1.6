@@ -6793,4 +6793,4 @@ old = hookmetamethod(game, "__index", LPH_JIT(function(Self, Key)
 	return old(Self, Key)
 end))
 -- 
-ui:Notify{text = "quasar.cool has loaded in ".. Round(tostring(tick() - utility.LastTick)).. " seconds !", time = 5, style = "loading"}
+ui:Notify{text = "quasar has loaded in ".. Round(tostring(tick() - utility.LastTick)).. " seconds !", time = 5, style = "loading"}
