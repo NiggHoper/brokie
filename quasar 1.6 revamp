@@ -4,7 +4,7 @@ local uis = game:GetService('UserInputService')
 local txtservice = game:GetService('TextService')
 local ts = game:GetService('TweenService')
 -- 
-local repo = "https://raw.githubusercontent.com/f1nobe7650/Lynx/main/"
+local repo = "https://raw.githubusercontent.com/f1nobe7650/QUASAR/main/"
 -- Getting the functions n stuff
 local Color = loadstring(game:HttpGet(repo .."Color.lua"))();
 local Math = loadstring(game:HttpGet(repo .."Math.lua"))();
@@ -27,7 +27,7 @@ local ColorCorrectionEffect = Instance.new("ColorCorrectionEffect", Lighting); C
 -- 
 setfpscap(999)
 --
-getgenv().Lynx, getgenv().Visuals, getgenv().utility = 
+getgenv().QUASAR, getgenv().Visuals, getgenv().utility = 
 {
 	["Connections"] = {},
 	["Account"] = {
@@ -54,11 +54,11 @@ getgenv().Lynx, getgenv().Visuals, getgenv().utility =
 		Resolver = false, 
 	},
 	["Files"] = {
-		Folders = {"Lynx", "Lynx/Configs", "Lynx/Luas", "Lynx/Assets"},
+		Folders = {"QUASAR", "QUASAR/Configs", "QUASAR/Luas", "QUASAR/Assets"},
 		Luas = {
-			["ChinaHat"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/Lynx/main/LUAs/ChinaHat"),
-			["Minecraft"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/Lynx/main/LUAs/Minecraft"),
-			["BetterGame"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/Lynx/main/LUAs/BetterGame")
+			["ChinaHat"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/QUASAR/main/LUAs/ChinaHat"),
+			["Minecraft"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/QUASAR/main/LUAs/Minecraft"),
+			["BetterGame"] = game:HttpGet("https://raw.githubusercontent.com/f1nobe7650/QUASAR/main/LUAs/BetterGame")
 		}, 
 	}
 }, 
@@ -112,19 +112,19 @@ getgenv().Lynx, getgenv().Visuals, getgenv().utility =
     ["Ignore"] = {}, 
 	["LastTick"] = tick(), 
 	["ShitTalk"] = {
-		["Lynx"] = {
+		["QUASAR"] = {
 			"WHAT THE HELL IS AN AZURE 🤡🤡",
-			"LYNX ONTOP LYNX ONTOP LYNX ONTOP",
-			"IS THAT LYNX???!! | .gg/lynx",
-			"Here is a wild lynx user in its habitat | .gg/lynx",
-			"LYNX >> ALL",
-			"LYNX ON TOP | .gg/lynx",
-			"LYNX > U",
-			".gg/lynx"
+			"QUASAR ONTOP QUASAR ONTOP QUASAR ONTOP",
+			"IS THAT QUASAR???!! | .gg/QUASAR",
+			"Here is a wild QUASAR user in its habitat | .gg/QUASAR",
+			"QUASAR >> ALL",
+			"QUASAR ON TOP | .gg/QUASAR",
+			"QUASAR > U",
+			".gg/QUASAR"
 		},
 		["AntiAim"] = {
 			"CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! CANT HIT ME?! ",
-			"Hmmm why arent u hitting me? Lynx too good XDDD",
+			"Hmmm why arent u hitting me? QUASAR too good XDDD",
 			"RESOLVER SUCCESSFULLY HIT 0 SHOTS",
 			"I think 0 prediction can hit more shots :(",
 			"Uphillian Aim???!!!!",
@@ -552,24 +552,24 @@ if not LPH_OBFUSCATED then
 	LPH_JIT = function(...) return (...) end;
 end
 -- 
-for i,v in pairs(Lynx.Files.Folders) do
+for i,v in pairs(QUASAR.Files.Folders) do
 	makefolder(v)
 end 
 -- 
-for LuaName, Contents in pairs(Lynx.Files.Luas) do
-	writefile("Lynx/Luas/" .. LuaName .. ".lua", Contents)
+for LuaName, Contents in pairs(QUASAR.Files.Luas) do
+	writefile("QUASAR/Luas/" .. LuaName .. ".lua", Contents)
 end 
 -- 
-if not isfile("Lynx/Assets/Auto Prediction.txt") then 
-	writefile("Lynx/Assets/Auto Prediction.txt", "10 ping value\n20 ping value\n30 ping value\n40 ping value\n50 ping value\n60 ping value\n70 ping value\n80 ping value\n90 ping value\n100 ping value")
+if not isfile("QUASAR/Assets/Auto Prediction.txt") then 
+	writefile("QUASAR/Assets/Auto Prediction.txt", "10 ping value\n20 ping value\n30 ping value\n40 ping value\n50 ping value\n60 ping value\n70 ping value\n80 ping value\n90 ping value\n100 ping value")
 end 
 -- 
 -- 
-if not isfile("Lynx/Assets/Shit Talk.txt") then 
-	writefile("Lynx/Assets/Shit Talk.txt", "You're a dog nn\nGet Good Get Lynx\nLOL")
+if not isfile("QUASAR/Assets/Shit Talk.txt") then 
+	writefile("QUASAR/Assets/Shit Talk.txt", "You're a dog nn\nGet Good Get QUASAR\nLOL")
 end 
 --
-utility.ShitTalk.Custom = readfile("Lynx/Assets/Shit Talk.txt"):split("\n")
+utility.ShitTalk.Custom = readfile("QUASAR/Assets/Shit Talk.txt"):split("\n")
 --
 local ui = {}
 -- 
@@ -3126,7 +3126,7 @@ function ui:Init(options)
 	function ui:Watermark(options)
 		local options = formatTable(options)
 
-		local text = options.text or 'Lynx'
+		local text = options.text or 'QUASAR'
 
 		local watermark = create('Frame',{
 			Name = "Watermark",
@@ -3274,7 +3274,7 @@ function ui:Init(options)
 		local options = formatTable(options)
 
 		local windowOptions = formatTable(options.window)
-		local windowName = windowOptions.name or 'Lynx'
+		local windowName = windowOptions.name or 'QUASAR'
 		local windowDescription = windowOptions.description or 'Universal'
 
 		local userOptions= formatTable(options.user)
@@ -3676,7 +3676,7 @@ end
 -- 
 local Chams = {} 
 do 
-	function Lynx:Cham_Character(Player, Color1, Color2, Fill1, Fill2) 
+	function QUASAR:Cham_Character(Player, Color1, Color2, Fill1, Fill2) 
 		local Highlight = NewInstance("Highlight", Highlights)
 		Highlight.Adornee = Player.Character
 		Highlight.Enabled = true
@@ -3694,7 +3694,7 @@ do
 		end)
 	end 
 
-	function Lynx:Cham_Remove(Player)
+	function QUASAR:Cham_Remove(Player)
 		if Player and Chams[Player] then 
 			Chams[Player]:Destroy()
 			Chams[Player].Parent = nil 
@@ -3702,7 +3702,7 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:PlayerDraw(Type, Outline, Name, Filled)
+	function QUASAR:PlayerDraw(Type, Outline, Name, Filled)
         local drawing = Drawing.new(Type)
         for i, v in pairs(Visuals["Settings"][Type]) do
             drawing[i] = v
@@ -3720,33 +3720,33 @@ do
         return drawing
     end
     -- 
-    function Lynx:Add(Player)
+    function QUASAR:Add(Player)
         if not Visuals["Drawings"][Player] then
             Visuals["Drawings"][Player] = {
-                Name = Lynx:PlayerDraw("Text", nil, "Name", false),
-                Tool = Lynx:PlayerDraw("Text", nil, "Tool", false),
-                BoxOutline = Lynx:PlayerDraw("Square", true, "BoxOutline", false),
-                Box = Lynx:PlayerDraw("Square", nil, "Box",false),
-                HealthOutline = Lynx:PlayerDraw("Square", false, "HealthOutline", false),
-                Health = Lynx:PlayerDraw("Square", nil, "Health", false),
-                HealthText = Lynx:PlayerDraw("Text",nil, "HealthText", false),
-                HealthBarGradient = Lynx:PlayerDraw("Image", nil, "HealthBarGradient", false), 
-                BoxFill = Lynx:PlayerDraw("Square", nil, "BoxFill", true),
-                ArmorBar = Lynx:PlayerDraw("Line", nil, "ArmorBar", false),
-                ArrowOutline = Lynx:PlayerDraw("Triangle", false, "ArrowOutline", false),
-                Arrow = Lynx:PlayerDraw("Triangle", nil, "Arrow", false),
-				Flag = Lynx:PlayerDraw("Text",nil, "Flag", false)
+                Name = QUASAR:PlayerDraw("Text", nil, "Name", false),
+                Tool = QUASAR:PlayerDraw("Text", nil, "Tool", false),
+                BoxOutline = QUASAR:PlayerDraw("Square", true, "BoxOutline", false),
+                Box = QUASAR:PlayerDraw("Square", nil, "Box",false),
+                HealthOutline = QUASAR:PlayerDraw("Square", false, "HealthOutline", false),
+                Health = QUASAR:PlayerDraw("Square", nil, "Health", false),
+                HealthText = QUASAR:PlayerDraw("Text",nil, "HealthText", false),
+                HealthBarGradient = QUASAR:PlayerDraw("Image", nil, "HealthBarGradient", false), 
+                BoxFill = QUASAR:PlayerDraw("Square", nil, "BoxFill", true),
+                ArmorBar = QUASAR:PlayerDraw("Line", nil, "ArmorBar", false),
+                ArrowOutline = QUASAR:PlayerDraw("Triangle", false, "ArrowOutline", false),
+                Arrow = QUASAR:PlayerDraw("Triangle", nil, "Arrow", false),
+				Flag = QUASAR:PlayerDraw("Text",nil, "Flag", false)
             }
             -- 
             Visuals["Drawings"][Player]["Corners"] = {}
             -- 
             for Index = 9, 16 do
-                Visuals["Drawings"][Player]["Corners"][Index] = Lynx:PlayerDraw("Line", nil, "Corners", false)
+                Visuals["Drawings"][Player]["Corners"][Index] = QUASAR:PlayerDraw("Line", nil, "Corners", false)
                 Visuals["Drawings"][Player]["Corners"][Index].Thickness = 3
             end
             --
             for Index = 1, 8 do
-                Visuals["Drawings"][Player]["Corners"][Index] = Lynx:PlayerDraw("Line", nil, "Corners", false)
+                Visuals["Drawings"][Player]["Corners"][Index] = QUASAR:PlayerDraw("Line", nil, "Corners", false)
                 Visuals["Drawings"][Player]["Corners"][Index].Thickness = 0 
             end
         end
@@ -3756,7 +3756,7 @@ do
         local Lines = {} 
         -- 
         for i = 1, 4 do 
-            Lines[i] = Lynx:newDrawing("Line", {Color = Color, Visible = true, Transparency = 1, Thickness = 1})
+            Lines[i] = QUASAR:newDrawing("Line", {Color = Color, Visible = true, Transparency = 1, Thickness = 1})
         end 
         -- 
         Lines[1].From = Vector2.new(Mouse.X + Gap, (Mouse.Y + 36) + Gap)
@@ -3789,7 +3789,7 @@ do
         local Lines = {} 
         -- 
         for i = 1, 4 do 
-            Lines[i] = Lynx:newDrawing("Line", {Color = Color, Visible = true, Transparency = 1, Thickness = 1})
+            Lines[i] = QUASAR:newDrawing("Line", {Color = Color, Visible = true, Transparency = 1, Thickness = 1})
         end     
         -- 
         local Loop = RunService.RenderStepped:Connect(function()
@@ -3827,7 +3827,7 @@ do
         end)
     end 
 	--
-	function Lynx:HitEffect(Type, Character)
+	function QUASAR:HitEffect(Type, Character)
 		local function convert(color)
 			return color.r/5, color.g/5, color.b/5
 		end 
@@ -3879,14 +3879,14 @@ do
 		end 
 	end 
 	-- 
-	Lynx:HitEffect("Confetti", LocalPlayer.Character)
+	QUASAR:HitEffect("Confetti", LocalPlayer.Character)
 	-- 
-	function Lynx:ThreadFunction(Func, Name, ...)
+	function QUASAR:ThreadFunction(Func, Name, ...)
         local Func = Name and function()
             local Passed, Statement = pcall(Func)
             --
-            if not Passed and not Lynx.Safe then
-                warn("Lynx:\n", "              " .. Name .. ":", Statement)
+            if not Passed and not QUASAR.Safe then
+                warn("QUASAR:\n", "              " .. Name .. ":", Statement)
             end
         end or Func
         local Thread = Create(Func)
@@ -3895,7 +3895,7 @@ do
         return Thread
     end
     -- 
-    function Lynx:RayCast(Part, Origin, Ignore, Distance)
+    function QUASAR:RayCast(Part, Origin, Ignore, Distance)
         local IgnoreList = Ignore
         local Distance = Distance or 5000
         --
@@ -3905,7 +3905,7 @@ do
         return (Hit and Hit:IsDescendantOf(Part.Parent)) == true, Hit
     end
 	-- 
-	function Lynx:KnockCheck(Player)
+	function QUASAR:KnockCheck(Player)
 		if Player.Character then 
 			if Player.Character.BodyEffects ~= nil then
 				if Player.Character.BodyEffects["K.O"].Value == true then 
@@ -3916,7 +3916,7 @@ do
 		return true
 	end 
     -- 
-    function Lynx:newDrawing(type, prop)
+    function QUASAR:newDrawing(type, prop)
         local obj = Drawing.new(type)
         --
         if prop then
@@ -3927,12 +3927,12 @@ do
         return obj  
     end
     -- 
-    function Lynx:GetPlayerStatus(Player)
+    function QUASAR:GetPlayerStatus(Player)
         if not Player then Player = LocalPlayer end
         return Player.Character and Player.Character:FindFirstChild("Humanoid") and Player.Character:FindFirstChild("HumanoidRootPart") and Player.Character.Humanoid.Health > 0 and true or false
     end 
     --
-    function Lynx:CreateBeam(Origin, End, Color1, Color2, Texture)
+    function QUASAR:CreateBeam(Origin, End, Color1, Color2, Texture)
         local BeamPart = NewInstance("Part", workspace)
         BeamPart.Name = "BeamPart"
         BeamPart.Transparency = 1
@@ -3981,21 +3981,21 @@ do
         end)
     end
     -- 
-    function Lynx:GetTool() 
-        if LocalPlayer.Character and LocalPlayer.Character:FindFirstChildWhichIsA("Tool") and Lynx:GetPlayerStatus() then 
+    function QUASAR:GetTool() 
+        if LocalPlayer.Character and LocalPlayer.Character:FindFirstChildWhichIsA("Tool") and QUASAR:GetPlayerStatus() then 
             return LocalPlayer.Character:FindFirstChildWhichIsA("Tool") 
         end 
     end 
 	-- 
-	function Lynx:Map(N, OldMin, OldMax, Min, Max)
+	function QUASAR:Map(N, OldMin, OldMax, Min, Max)
 		return (N - OldMin) / (OldMax - OldMin) * (Max - Min) + Min
 	end
     -- 
-    function Lynx:Rainbow(Speed)
+    function QUASAR:Rainbow(Speed)
         return Color3.fromHSV(Abs(Sin(tick()) / (5 - Speed)),1,1)
     end 
     --
-    function Lynx:CheckIfEven(Number)
+    function QUASAR:CheckIfEven(Number)
         if (Number % 2 == 0) then
             return true
         else
@@ -4003,14 +4003,14 @@ do
         end
     end
     --
-    function Lynx:Connection(Type, Callback)
+    function QUASAR:Connection(Type, Callback)
         local Connection = Type:Connect(Callback)
-        Lynx.Connections[#Lynx.Connections + 1] = Connection
+        QUASAR.Connections[#QUASAR.Connections + 1] = Connection
         --
         return Connection
     end
     --
-    function Lynx:GetBodyParts(Character, RootPart, Indexes, Hitboxes)
+    function QUASAR:GetBodyParts(Character, RootPart, Indexes, Hitboxes)
         local Parts = {}
         local Hitboxes = Hitboxes or {"Head", "Torso", "Arms", "Legs"}
         --
@@ -4033,12 +4033,12 @@ do
         return Parts
     end
     -- 
-    function Lynx:GetClosestPlayer()
+    function QUASAR:GetClosestPlayer()
         local shortestDistance = Huge
         --  
         local closestPlayer
         for _, Player in pairs(Players:GetPlayers()) do
-            if Player ~= LocalPlayer and Lynx:GetPlayerStatus(Player) then
+            if Player ~= LocalPlayer and QUASAR:GetPlayerStatus(Player) then
                 local pos, OnScreen = Camera:WorldToViewportPoint(Player.Character.HumanoidRootPart.Position)
                 local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(Mouse.X, Mouse.Y)).magnitude
                 --
@@ -4052,7 +4052,7 @@ do
     end
 
 	-- 
-    function Lynx:UpdateVisuals()
+    function QUASAR:UpdateVisuals()
         if flags["lighting_masterswitch"] then 
             if flags["lighting_ambient"] then 
                 if Lighting.Ambient ~= flags["lighting_ambient1"] then 
@@ -4098,11 +4098,11 @@ do
         end 
     end 
     --
-    function Lynx:GetPlayerParent(Player)
+    function QUASAR:GetPlayerParent(Player)
         return Player.Parent
     end
 	-- 
-	function Lynx:AngleToEdge(angle, inset) -- pasted from the grenade indicators lmao
+	function QUASAR:AngleToEdge(angle, inset) -- pasted from the grenade indicators lmao
 		local pos
 		local ox = Cos(angle)
 		local oy = Sin(angle)
@@ -4128,39 +4128,39 @@ do
 		return pos
 	end
     --
-    function Lynx:GetCharacter(Player)
+    function QUASAR:GetCharacter(Player)
         return Player.Character
     end
     --
-    function Lynx:GetHumanoid(Player, Character)
+    function QUASAR:GetHumanoid(Player, Character)
         return Character:FindFirstChildOfClass("Humanoid")
     end
     --
-    function Lynx:GetRootPart(Player, Character, Humanoid)
+    function QUASAR:GetRootPart(Player, Character, Humanoid)
         return Humanoid.RootPart
     end
     --
-    function Lynx:GetHealth(Player, Character, Humanoid)
+    function QUASAR:GetHealth(Player, Character, Humanoid)
         if Humanoid then
             return Clamp(Humanoid.Health, 0, Humanoid.MaxHealth), Humanoid.MaxHealth
         end
     end
     --
-    function Lynx:ValidateClient(Player)
-        local Object = Lynx:GetCharacter(Player)
-        local Humanoid = (Object and Lynx:GetHumanoid(Player, Object))
-        local RootPart = (Humanoid and Lynx:GetRootPart(Player, Object, Humanoid))
+    function QUASAR:ValidateClient(Player)
+        local Object = QUASAR:GetCharacter(Player)
+        local Humanoid = (Object and QUASAR:GetHumanoid(Player, Object))
+        local RootPart = (Humanoid and QUASAR:GetRootPart(Player, Object, Humanoid))
         --
         return Object, Humanoid, RootPart
     end
     -- 
-    function Lynx:ClientAlive(Player, Character, Humanoid)
-        local Health, MaxHealth = Lynx:GetHealth(Player, Character, Humanoid)
+    function QUASAR:ClientAlive(Player, Character, Humanoid)
+        local Health, MaxHealth = QUASAR:GetHealth(Player, Character, Humanoid)
         --
         return (Health > 0)
     end
     --
-	function Lynx:getRotate(Vec, Rads)
+	function QUASAR:getRotate(Vec, Rads)
 		local vec = Vec.Unit
 		local sin = math.sin(Rads)
 		local cos = math.cos(Rads)
@@ -4170,8 +4170,8 @@ do
 		return Vector2.new(x, y).Unit * Vec.Magnitude
 	end
 	-- 
-    function Lynx:Unload()
-        for Index, Connection in next, Lynx.Connections do
+    function QUASAR:Unload()
+        for Index, Connection in next, QUASAR.Connections do
             Connection:Disconnect()
         end
 		-- 
@@ -4182,16 +4182,16 @@ do
 
     end
 	--[[
-	function Lynx:Update_Configs()
-		all_cfgs = listfiles("Lynx\\")
+	function QUASAR:Update_Configs()
+		all_cfgs = listfiles("QUASAR\\")
 		for _,cfg in next, all_cfgs do
-			all_cfgs[_] = string.gsub(string.gsub(cfg, "Lynx\\", ""), ".txt", "")
+			all_cfgs[_] = string.gsub(string.gsub(cfg, "QUASAR\\", ""), ".txt", "")
 			list:add_value(all_cfgs[_])
 		end
 	end 
-	Lynx:Update_Configs()
+	QUASAR:Update_Configs()
     --]]
-    function Lynx:ClampString(String, Length, Font)
+    function QUASAR:ClampString(String, Length, Font)
         local Font = (Font or 2)
         local Split = String:split("\n")
         --
@@ -4206,18 +4206,18 @@ do
         return (Clamped ~= String and (Clamped == "" and "" or Clamped:sub(0, #Clamped - 1) .. " ...") or Clamped)
     end
     -- 
-    function Lynx:GetTeam(Player)
+    function QUASAR:GetTeam(Player)
         return Player.Team
     end
     -- 
-    function Lynx:CheckTeam(Player1, Player2)
-        return (Lynx:GetTeam(Player1) ~= Lynx:GetTeam(Player2))
+    function QUASAR:CheckTeam(Player1, Player2)
+        return (QUASAR:GetTeam(Player1) ~= QUASAR:GetTeam(Player2))
     end
     -- 
-    function Lynx:GetClosestPart(Player, List)
+    function QUASAR:GetClosestPart(Player, List)
         local shortestDistance = Huge
         local closestPart = nil
-        if Lynx:GetPlayerStatus(Player) then
+        if QUASAR:GetPlayerStatus(Player) then
             for Index, Value in pairs(Player.Character:GetChildren()) do
                 if Value:IsA("BasePart") then 
                     local pos = Camera:WorldToViewportPoint(Value.Position)
@@ -4232,19 +4232,19 @@ do
         end
     end 
 	-- 
-	function Lynx:findNearestTargetInRadius(origin, radius)
+	function QUASAR:findNearestTargetInRadius(origin, radius)
 		local minDistance = radius
 		local nearestTarget = nil
 		-- 							
 		for _, target in pairs(Players:GetPlayers()) do
-			if target ~= LocalPlayer and Lynx:GetPlayerStatus() and Lynx:GetPlayerStatus(target) then
-				local Object, Humanoid, RootPart = Lynx:ValidateClient(target)
+			if target ~= LocalPlayer and QUASAR:GetPlayerStatus() and QUASAR:GetPlayerStatus(target) then
+				local Object, Humanoid, RootPart = QUASAR:ValidateClient(target)
 				if Object and Humanoid and RootPart then 
 					local Check = true 
 					-- 
-					if (Find(flags["Silent_Aim_Checks"], "Wall") and not Lynx:RayCast(RootPart, Lynx:GetOrigin("Handle"), {Lynx:GetCharacter(LocalPlayer)})) then Check = false end
+					if (Find(flags["Silent_Aim_Checks"], "Wall") and not QUASAR:RayCast(RootPart, QUASAR:GetOrigin("Handle"), {QUASAR:GetCharacter(LocalPlayer)})) then Check = false end
 					if (Find(flags["Silent_Aim_Checks"], "ForceField") and Object:FindFirstChildOfClass("ForceField")) then Check = false end
-					if (Find(flags["Silent_Aim_Checks"], "Knocked") and not Lynx:KnockCheck(target)) then Check = false end
+					if (Find(flags["Silent_Aim_Checks"], "Knocked") and not QUASAR:KnockCheck(target)) then Check = false end
 					-- 
 					local distance = (target.Character.HumanoidRootPart.Position - origin).Magnitude
 					if distance < minDistance and Check == true then
@@ -4258,7 +4258,7 @@ do
 		return nearestTarget
 	end	
 	-- 	
-	function Lynx:movePlayerAlongPath(path, offset)
+	function QUASAR:movePlayerAlongPath(path, offset)
 		local waypoints = path:GetWaypoints()
 		-- 
 		for _, waypoint in pairs(waypoints) do
@@ -4268,7 +4268,7 @@ do
 		end
 	end
     -- 
-    function Lynx:RandomChance(Percentage)
+    function QUASAR:RandomChance(Percentage)
         local Chance = Percentage
         --
         if Random(1,100) <= Chance then
@@ -4278,7 +4278,7 @@ do
         end
     end
     -- 
-	function Lynx:CloneCharacter(Player, Color, Material, Transparency, Parent, Time)
+	function QUASAR:CloneCharacter(Player, Color, Material, Transparency, Parent, Time)
 		Player.Character.Archivable = true
 		local Clone = Player.Character:Clone()
 		Clone.Parent = Parent
@@ -4314,7 +4314,7 @@ do
 		end)
 	end 
 	-- 
-	function Lynx:CloneCharacter2(Player, Color, Enabled, Time, Material, Transparency, Parent)
+	function QUASAR:CloneCharacter2(Player, Color, Enabled, Time, Material, Transparency, Parent)
 		local Model = NewInstance("Model")
 		Model.Name = "Model"
 		Model.Parent = Parent 		
@@ -4343,8 +4343,8 @@ do
 		end 
 	end 
     -- 
-    function Lynx:CalculateAbsolutePosition(Player)
-        if Lynx:GetPlayerStatus(Player) then
+    function QUASAR:CalculateAbsolutePosition(Player)
+        if QUASAR:GetPlayerStatus(Player) then
             local root = Player.Character.HumanoidRootPart
             local character = Player.Character 
             --
@@ -4367,22 +4367,22 @@ do
         end
     end 
     -- 
-    function Lynx:GetOrigin(Origin)
+    function QUASAR:GetOrigin(Origin)
         if Origin == "Head" then
-            local Object, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+            local Object, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
             local Head = Object:FindFirstChild("Head")
             --
             if Head and Head:IsA("RootPart") then
                 return Head.CFrame.Position
             end
         elseif Origin == "Torso" then
-            local Object, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+            local Object, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
             --
             if RootPart then
                 return RootPart.CFrame.Position
             end
 		elseif Origin == "Handle" then 
-			local Tool = Lynx:GetTool()
+			local Tool = QUASAR:GetTool()
 			-- 
 			if Tool then 
 				return Tool.Handle.CFrame.Position
@@ -4392,7 +4392,7 @@ do
         return Workspace.CurrentCamera.CFrame.Position
     end
 	-- 
-	function Lynx:HitSound(Id, Volume, Pitch)
+	function QUASAR:HitSound(Id, Volume, Pitch)
 		local Sound = Instance.new("Sound", Workspace); local PitchSound = Instance.new("PitchShiftSoundEffect", Sound)
 		-- 
 		Sound.SoundId = "rbxassetid://".. Id ..""
@@ -4405,7 +4405,7 @@ do
 		end)	
 	end 
     --
-    function Lynx:ValidateArguments(Args, RayMethod)
+    function QUASAR:ValidateArguments(Args, RayMethod)
         local Matches = 0
             --
         if #Args < RayMethod.ArgCountRequired then
@@ -4421,12 +4421,12 @@ do
         return Matches >= RayMethod.ArgCountRequired
     end
     --
-    function Lynx:GetDirection(Origin, Position)
+    function QUASAR:GetDirection(Origin, Position)
         return (Position - Origin).Unit * 1000
     end
 	-- 
 	for Index = 1, 4 do
-        local line = Lynx:newDrawing("Line",{
+        local line = QUASAR:newDrawing("Line",{
             Visible =  true,
             Color = NewRGB(255,255,255),
             Thickness = 2,
@@ -4434,7 +4434,7 @@ do
             Transparency = 1
         })
         --
-        local line_outline = Lynx:newDrawing("Line",{
+        local line_outline = QUASAR:newDrawing("Line",{
             Visible =  true,
             Color = Color3.fromRGB(0, 0, 0),
             Thickness = 4,
@@ -4447,7 +4447,7 @@ do
     end
     -- 
     for Index = 1, 2 do 
-        local Square = Lynx:newDrawing("Square",{
+        local Square = QUASAR:newDrawing("Square",{
             Visible = true,
             Size = NewVector2(2, 2),
             Color = NewRGB(255,255,255),
@@ -4459,7 +4459,7 @@ do
     end     
     -- 
     for Index = 1, 5 do 
-        local FieldOfView = Lynx:newDrawing("Circle",{
+        local FieldOfView = QUASAR:newDrawing("Circle",{
             Visible = false,
             Color = NewRGB(255,255,255),
             Thickness = 1,
@@ -4480,7 +4480,7 @@ do
 	utility.Parts[1].Color = Color3.fromRGB(255,255,255) 
 	-- 
 	for Index = 6, 7 do 
-		utility.Renders[Index] = Lynx:newDrawing("Line", {Visible =  true, Color = Color3.fromRGB(255, 255, 255), Thickness = 1, ZIndex = 1, Transparency = 1})
+		utility.Renders[Index] = QUASAR:newDrawing("Line", {Visible =  true, Color = Color3.fromRGB(255, 255, 255), Thickness = 1, ZIndex = 1, Transparency = 1})
 	end 
 	-- 
 	utility.Renders[6].Thickness = 1
@@ -4504,12 +4504,12 @@ do
 	-- 
 	Visuals["KeyBindList"] = {
 		["Drawings"] = {
-			Accent = Lynx:newDrawing("Square", {Size = NewVector2(Size[1] - 2,1.5), Color = Color3.fromRGB(0,193,255), Visible = false , Position = NewVector2(Position[1] + 1, Position[2]), Filled = true, ZIndex = 999}),
-			Text = Lynx:newDrawing("Text", {Text = "Keybinds", Color = NewRGB(255,255,255), Size = 13, Center = false, Font = 1, Visible = false, Position = NewVector2(79,Position[2]+2), Outline = true, ZIndex = 9999}),
-			Frame = Lynx:newDrawing("Square", {Size = NewVector2(Size[1],Size[2]), Visible = false, Color = NewRGB(0, 0, 0), Position = NewVector2(Position[1],Position[2]), Filled = true}),
-			Inner = Lynx:newDrawing("Square", {Size = NewVector2(Size[1]-2,Size[2]-2), Visible = false , Color = NewRGB(30, 30, 30), Position = NewVector2(Position[1]+1,Position[2]+1), Filled = true}),
-			Gradient = Lynx:newDrawing("Image", {Size = NewVector2(Size[1]-2,Size[2]-2), Visible = false , Position = NewVector2(Position[1]+1,Position[2]+1), Transparency = 1, Data = game:HttpGet("https://raw.githubusercontent.com/portallol/luna/main/gradient_new.png"), Transparency = 0.5}),
-			Key = Lynx:newDrawing("Text", {Text = "", Color = NewRGB(255,255,255), Size = 13, Center = false, Font = 1, Visible = false, Position = NewVector2(13,Position[2]+17), Outline = true, ZIndex = 9999}),
+			Accent = QUASAR:newDrawing("Square", {Size = NewVector2(Size[1] - 2,1.5), Color = Color3.fromRGB(0,193,255), Visible = false , Position = NewVector2(Position[1] + 1, Position[2]), Filled = true, ZIndex = 999}),
+			Text = QUASAR:newDrawing("Text", {Text = "Keybinds", Color = NewRGB(255,255,255), Size = 13, Center = false, Font = 1, Visible = false, Position = NewVector2(79,Position[2]+2), Outline = true, ZIndex = 9999}),
+			Frame = QUASAR:newDrawing("Square", {Size = NewVector2(Size[1],Size[2]), Visible = false, Color = NewRGB(0, 0, 0), Position = NewVector2(Position[1],Position[2]), Filled = true}),
+			Inner = QUASAR:newDrawing("Square", {Size = NewVector2(Size[1]-2,Size[2]-2), Visible = false , Color = NewRGB(30, 30, 30), Position = NewVector2(Position[1]+1,Position[2]+1), Filled = true}),
+			Gradient = QUASAR:newDrawing("Image", {Size = NewVector2(Size[1]-2,Size[2]-2), Visible = false , Position = NewVector2(Position[1]+1,Position[2]+1), Transparency = 1, Data = game:HttpGet("https://raw.githubusercontent.com/portallol/luna/main/gradient_new.png"), Transparency = 0.5}),
+			Key = QUASAR:newDrawing("Text", {Text = "", Color = NewRGB(255,255,255), Size = 13, Center = false, Font = 1, Visible = false, Position = NewVector2(13,Position[2]+17), Outline = true, ZIndex = 9999}),
 		}, 
 		["Text"] = ""
 	} 
@@ -4542,7 +4542,7 @@ do
 		--
         S:Keybind{name = 'Key', flag = "Aim Assist Key", type = 1, callback = function(Bool)
 			if Bool and flags["Aim Assist Enabled"] then 
-				Lynx.Assist.Target = Lynx:GetClosestPlayer()
+				QUASAR.Assist.Target = QUASAR:GetClosestPlayer()
 			end 
 		end}
 		--
@@ -4664,21 +4664,21 @@ do
 			if flags["Silent Aim Enabled"] == true then 
 				-- 
 				if flags["Silent Aim Key"].Active then 
-					Lynx.Silent.Target = Lynx:GetClosestPlayer()
-					if not Lynx.Silent.Target then return end 
-					if Lynx.Silent.Target.Character and flags["Silent Aim Type"] == "Target Aim" and flags["RageBot"] == false then 
-						local currentHealth = Lynx.Silent.Target.Character:WaitForChild("Humanoid").Health
+					QUASAR.Silent.Target = QUASAR:GetClosestPlayer()
+					if not QUASAR.Silent.Target then return end 
+					if QUASAR.Silent.Target.Character and flags["Silent Aim Type"] == "Target Aim" and flags["RageBot"] == false then 
+						local currentHealth = QUASAR.Silent.Target.Character:WaitForChild("Humanoid").Health
 						-- 
 						if Find(flags["Silent Aim Notify"], "Locked") then 
-							ui:Notify{text = "Locked onto: ".. Lynx.Silent.Target.Name.. " (".. Lynx.Silent.Target.DisplayName .. ")", time = 2, style = "loading"}
+							ui:Notify{text = "Locked onto: ".. QUASAR.Silent.Target.Name.. " (".. QUASAR.Silent.Target.DisplayName .. ")", time = 2, style = "loading"}
 						end 
 						-- 
 						if flags["Visualize Part Chams Enabled"] then 
-							Lynx:CloneCharacter2(Lynx.Silent.Target, flags["Visualize Part Chams Color"].Color, false, 0, flags["Visualize Part Chams Material"],flags["Visualize Part Chams Color"].Alpha, Workspace.Terrain["Backtrack"])
+							QUASAR:CloneCharacter2(QUASAR.Silent.Target, flags["Visualize Part Chams Color"].Color, false, 0, flags["Visualize Part Chams Material"],flags["Visualize Part Chams Color"].Alpha, Workspace.Terrain["Backtrack"])
 						end 
 						-- 
 						if flags["Cham Player Enabled"] then 
-							Highlight = NewInstance("Highlight", Lynx.Silent.Target.Character)
+							Highlight = NewInstance("Highlight", QUASAR.Silent.Target.Character)
 							Highlight.Enabled = true
 							Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 							Highlight.FillColor = flags["Cham Player Color1"].Color
@@ -4687,19 +4687,19 @@ do
 							Highlight.FillTransparency = flags["Cham Player Color1"].Alpha
 						end 
 						-- 
-						--[[Lynx.Connections["On-Hit"] = Lynx.Silent.Target.Character:WaitForChild("Humanoid").HealthChanged:Connect(function(newHealth)
+						--[[QUASAR.Connections["On-Hit"] = QUASAR.Silent.Target.Character:WaitForChild("Humanoid").HealthChanged:Connect(function(newHealth)
 							if newHealth < currentHealth then 
 								if Find(flags["Silent Aim Notify"], "Hit Log") then 
-									ui:Notify{text = "".. Lynx.Silent.Target.Name.. " got hit for: ".. Floor(Abs(newHealth - currentHealth)), time = 5, style = "loading"}
+									ui:Notify{text = "".. QUASAR.Silent.Target.Name.. " got hit for: ".. Floor(Abs(newHealth - currentHealth)), time = 5, style = "loading"}
 								end 
 							end 
 							currentHealth = newHealth
 						end)]]
 						-- 
-						Lynx.Connections["On-Respawn"] = Lynx.Silent.Target.CharacterAdded:Connect(function()
+						QUASAR.Connections["On-Respawn"] = QUASAR.Silent.Target.CharacterAdded:Connect(function()
 							Wait(2)
 							if flags["Cham Player Enabled"] then 
-								Highlight = NewInstance("Highlight", Lynx.Silent.Target.Character)
+								Highlight = NewInstance("Highlight", QUASAR.Silent.Target.Character)
 								Highlight.Enabled = true
 								Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 								Highlight.FillColor = flags["Cham Player Color1"].Color
@@ -4710,12 +4710,12 @@ do
 						end)
 					end 
 				else 
-					if Lynx.Connections["On-Hit"] then 
-						Lynx.Connections["On-Hit"]:Disconnect() 
+					if QUASAR.Connections["On-Hit"] then 
+						QUASAR.Connections["On-Hit"]:Disconnect() 
 					end 
 					-- 
-					if Lynx.Connections["On-Respawn"] then 
-						Lynx.Connections["On-Respawn"]:Disconnect() 
+					if QUASAR.Connections["On-Respawn"] then 
+						QUASAR.Connections["On-Respawn"]:Disconnect() 
 					end
 					-- 
 					if Find(flags["Silent Aim Notify"], "Unlocked") then 
@@ -4737,46 +4737,46 @@ do
 			end 	
 		end}
 		S:Toggle{Name = 'Look-At', flag = 'Look-At'}	
-		Lynx.Connections["Anti Aim Viewer"] = {}
+		QUASAR.Connections["Anti Aim Viewer"] = {}
 		S:Toggle{Name = 'Bypass Aim Viewer', flag = 'Bypass Aim Viewer', callback = function(Bool) 
 			if Bool then 
 				for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
-					if v:IsA("Tool") and not Lynx.Connections["Anti Aim Viewer"][v] then
-						Lynx.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(Lynx.AimViwerBypass)
+					if v:IsA("Tool") and not QUASAR.Connections["Anti Aim Viewer"][v] then
+						QUASAR.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(QUASAR.AimViwerBypass)
 					end
 				end
 				for i, v in pairs(LocalPlayer.Character:GetChildren()) do
-					if v:IsA("Tool") and not Lynx.Connections["Anti Aim Viewer"][v] then
-						Lynx.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(Lynx.AimViwerBypass)
+					if v:IsA("Tool") and not QUASAR.Connections["Anti Aim Viewer"][v] then
+						QUASAR.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(QUASAR.AimViwerBypass)
 					end
 				end
 				LocalPlayer.Character.ChildAdded:connect(function(v)
-					if v:IsA("Tool") and not Lynx.Connections["Anti Aim Viewer"][v] then
-						Lynx.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(Lynx.AimViwerBypass)
+					if v:IsA("Tool") and not QUASAR.Connections["Anti Aim Viewer"][v] then
+						QUASAR.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(QUASAR.AimViwerBypass)
 					end
 				end)
 				LocalPlayer.CharacterAdded:connect(function(v)
-					for i = 1, #Lynx.Connections["Anti Aim Viewer"] do
-						Lynx.Connections["Anti Aim Viewer"][i]:Disconnect()
-						Lynx.Connections["Anti Aim Viewer"][i] = nil
+					for i = 1, #QUASAR.Connections["Anti Aim Viewer"] do
+						QUASAR.Connections["Anti Aim Viewer"][i]:Disconnect()
+						QUASAR.Connections["Anti Aim Viewer"][i] = nil
 					end
 					v.ChildAdded:connect(function(v)
-						if v:IsA("Tool") and not Lynx.Connections["Anti Aim Viewer"][v] then
-							Lynx.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(Lynx.AimViwerBypass)
+						if v:IsA("Tool") and not QUASAR.Connections["Anti Aim Viewer"][v] then
+							QUASAR.Connections["Anti Aim Viewer"][v] = v.Activated:Connect(QUASAR.AimViwerBypass)
 						end
 					end)
 				end)
 			else 
-				for i = 1, #Lynx.Connections["Anti Aim Viewer"] do
-					Lynx.Connections["Anti Aim Viewer"][i]:Disconnect()
-					Lynx.Connections["Anti Aim Viewer"][i] = nil
+				for i = 1, #QUASAR.Connections["Anti Aim Viewer"] do
+					QUASAR.Connections["Anti Aim Viewer"][i]:Disconnect()
+					QUASAR.Connections["Anti Aim Viewer"][i] = nil
 				end
 			end 
 		end}
 		S:Toggle{Name = 'RageBot', flag = 'RageBot'}
 		S:Toggle{Name = 'Auto-Shoot', flag = 'Auto-Shoot'}
 		Silent_Aim:Input{Name = "Prediction:", flag = "Silent Aim Prediction", Focuses = true, Editable = true, callback = function(Text)
-			Lynx.Silent.Prediction = flags["Silent Aim Prediction"]
+			QUASAR.Silent.Prediction = flags["Silent Aim Prediction"]
 		end}
 		S:Toggle{Name = 'Auto Prediction', flag = 'Auto Prediction'}
 		S:Toggle{Name = 'Use Ping', flag = 'Use Ping'}
@@ -4795,7 +4795,7 @@ do
 		AirPrediction:Dropdown{Name = 'Method', flag = 'Air Prediction Method', options = {"Offset", "Part"}, default = {"Offset"}, min = 1, max = 1}
 		-- 
 		AirPrediction:Input{Name = "Jump Offset:", flag = "Jump Offset", Focuses = true, Editable = true, callback = function(Text)
-			Lynx.Silent.Offset = flags["Jump Offset"]
+			QUASAR.Silent.Offset = flags["Jump Offset"]
 		end}
 		-- 
 		AirPrediction:Dropdown{Name = 'Part', flag = 'Air Prediction Part', options = bodyParts, min = 1, max = 1}
@@ -4975,9 +4975,9 @@ do
 			for Index, Player in pairs(Players:GetPlayers()) do
 				if Player ~= LocalPlayer then
 					if Bool then 
-						Lynx:Cham_Character(Player, flags["Highlight_Fill_Color"].Color, flags["Highlight_Outline_Color"].Color, flags["Highlight_Fill_Color"].Alpha, flags["Highlight_Outline_Color"].Alpha) 
+						QUASAR:Cham_Character(Player, flags["Highlight_Fill_Color"].Color, flags["Highlight_Outline_Color"].Color, flags["Highlight_Fill_Color"].Alpha, flags["Highlight_Outline_Color"].Alpha) 
 					else 
-						Lynx:Cham_Remove(Player)
+						QUASAR:Cham_Remove(Player)
 					end 	
 				end
 			end
@@ -5263,7 +5263,7 @@ do
 					end 
 				end 
 				-- 
-				Lynx["Connections"]["Custom Character"] = LocalPlayer.CharacterAdded:Connect(function()
+				QUASAR["Connections"]["Custom Character"] = LocalPlayer.CharacterAdded:Connect(function()
 					if Part then 
 						Part:Destroy()
 					end 
@@ -5323,12 +5323,12 @@ do
 					end 	
                 end 
 				-- 
-				if Lynx["Connections"]["Custom Character"] then 
-					Lynx["Connections"]["Custom Character"]:Disconnect()
+				if QUASAR["Connections"]["Custom Character"] then 
+					QUASAR["Connections"]["Custom Character"]:Disconnect()
 				end 
 				-- 
-				if Lynx:GetTool() then 
-					Lynx:GetTool().Handle.Transparency = 0 
+				if QUASAR:GetTool() then 
+					QUASAR:GetTool().Handle.Transparency = 0 
 				end 
 			end 
 		end}
@@ -5540,18 +5540,18 @@ do
             if config_name == "" then
                 ui:Notify{text = 'Enter a config name!', time = 5, style = "loading"}
             end
-            writefile("Lynx/Configs/" .. config_name .. ".cfg", Window:SaveConfig())
+            writefile("QUASAR/Configs/" .. config_name .. ".cfg", Window:SaveConfig())
 			ui:Notify{text = "Saved your config to: " .. config_name, time = 5, style = "loading"}
 		end)}
 		Configs_Sector:Button{Name = 'Load', callback = LPH_JIT(function()
 			local config_name = flags["Config Name"]
-			Window:LoadConfig(readfile("Lynx/Configs/" .. config_name .. ".cfg"))
+			Window:LoadConfig(readfile("QUASAR/Configs/" .. config_name .. ".cfg"))
 			ui:Notify{text = "" .. config_name .. " has succesfully loaded!.", time = 5, style = "loading"}
 		end)}
 		Configs_Sector:Button{Name = 'Delete', callback = LPH_JIT(function()
 			local selected_config = flags["Config Name"]
             if selected_config then
-                delfile("Lynx/Configs/" .. selected_config .. ".cfg")
+                delfile("QUASAR/Configs/" .. selected_config .. ".cfg")
 				ui:Notify{text = "" .. selected_config .. " has been deleted.", time = 5, style = "loading"}
 			else 
 				ui:Notify{text = "" .. selected_config .. " doesnt exist..", time = 5, style = "loading"}
@@ -5559,14 +5559,14 @@ do
 		end)}
     end Configs_Sector:Button{Name = 'Load', callback = LPH_JIT(function()
 			local config_name = flags["Config Name"]
-			Window:LoadConfig(readfile("Lynx/Configs/" .. config_name .. ".cfg"))
+			Window:LoadConfig(readfile("QUASAR/Configs/" .. config_name .. ".cfg"))
 			ui:Notify{text = "" .. config_name .. " has succesfully loaded!.", time = 5, style = "loading"}
 		end)}
     -- 
     local Settings_Sector = Settings:Sector{Side = 2}
     Settings_Sector:Title{Title = 'Settings'}
     do 
-		Settings_Sector:Button{Name = 'Unload Cheat', callback = Lynx.Unload}
+		Settings_Sector:Button{Name = 'Unload Cheat', callback = QUASAR.Unload}
 		-- 
 		Settings_Sector:Keybind{Flag = "UI Bind", name = 'Key',key = Enum.KeyCode.Insert, type = 2, callback = LPH_JIT(function() ui:Toggle() end)}
 		ui:Toggle()
@@ -5606,7 +5606,7 @@ do
 		Settings_Sector:Dropdown{Name = 'LUAs', flag = 'LUAs', options = {"ChinaHat", "BetterGame", "Minecraft"}, min = 1, max = 1}
 		-- 
 		Settings_Sector:Button{Name = 'Load', callback = function()
-			loadfile("Lynx/Luas/".. flags["LUAs"]..".lua")()
+			loadfile("QUASAR/Luas/".. flags["LUAs"]..".lua")()
 		end}
     end 
 	-- 
@@ -5622,7 +5622,7 @@ end
 -- Looped Functions
 do 
 	--LOOPED FUNCTIONS
-	function Lynx:Cursor(Frame)
+	function QUASAR:Cursor(Frame)
 		if flags["Cursor"] and flags["Spin"] then 
 			local MousePosition = NewVector2(Mouse.X, Mouse.Y + 36)
 			-- 
@@ -5668,14 +5668,14 @@ do
 		end     
 	end
 	--
-	function Lynx:CharacterMaterial()
+	function QUASAR:CharacterMaterial()
 		if flags["Forcefield Character Enabled"] then 
 			for i, v in pairs(LocalPlayer.Character:GetChildren()) do 
 				if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then 
 					v.Material = Enum.Material.ForceField
 					v.Transparency = flags["Forcefield Character Color"].Transparency
 					if flags["Rainbow Character"] then 
-						v.Color = Lynx:Rainbow(flags["Rainbow Speed"])
+						v.Color = QUASAR:Rainbow(flags["Rainbow Speed"])
 					else 
 						v.Color = flags["Forcefield Character Color"].Color
 					end 
@@ -5684,15 +5684,15 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:GunMaterial()
+	function QUASAR:GunMaterial()
 		if flags["Gun Material Enabled"] then 
-			local Tool = Lynx:GetTool()
+			local Tool = QUASAR:GetTool()
 			if Tool ~= nil then 
 				for i, v in pairs(Tool:GetChildren()) do 
 					if v:IsA("MeshPart") then 
 						v.TextureID = ""
 						v.Material = Enum.Material[flags["Gun Material"]]
-						v.Color = flags["Rainbow Gun"] and Lynx:Rainbow(flags["Rainbow Speed"]) or flags["Gun Material Color"].Color
+						v.Color = flags["Rainbow Gun"] and QUASAR:Rainbow(flags["Rainbow Speed"]) or flags["Gun Material Color"].Color
 						v.Transparency = flags["Sine Gun"] and utility.Sine + 0.4 or flags["Gun Material Color"].Transparency
 					end 
 				end 
@@ -5700,9 +5700,9 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:Speed()
+	function QUASAR:Speed()
 		if flags["Speed Enabled"] and flags["Speed Key"].Active then 
-			local Char, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+			local Char, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
 			if Char and Humanoid and RootPart then  
 				RootPart.CFrame = RootPart.CFrame + (Humanoid.MoveDirection * flags["Speed Amount"] * 0.03) 
 				-- 
@@ -5720,9 +5720,9 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:Bhop()
+	function QUASAR:Bhop()
 		if flags["Bunny Hop"] and flags["Bhop Key"].Active then 
-			local Char, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+			local Char, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
 			if Char and Humanoid and RootPart then 
 				if Humanoid.FloorMaterial == Enum.Material.Air then 
 					RootPart.CFrame = RootPart.CFrame + (Humanoid.MoveDirection * flags["Bunny Hop Amount"] * 0.03) 	
@@ -5732,9 +5732,9 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:Fly() 
+	function QUASAR:Fly() 
 		if flags["Fly Enabled"] and flags["Fly Key"].Active then 
-			local Char, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+			local Char, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
 			if Char and Humanoid and RootPart then 
 				local FlyPosition = Vector3.new(0, 0, 0)
 				local CCV = Camera.CFrame.lookVector
@@ -5774,9 +5774,9 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:GripPosition()
-		if flags["Grip Position"] and Lynx:GetTool() ~= nil and Lynx:GetTool().GripPos ~= Vector3.new(flags["XX"],flags["YY"],flags["ZZ"]) then 
-			local tool = Lynx:GetTool()
+	function QUASAR:GripPosition()
+		if flags["Grip Position"] and QUASAR:GetTool() ~= nil and QUASAR:GetTool().GripPos ~= Vector3.new(flags["XX"],flags["YY"],flags["ZZ"]) then 
+			local tool = QUASAR:GetTool()
 			if tool ~= nil then 
 				tool.Parent = LocalPlayer.Backpack
 				tool.GripPos = Vector3.new(flags["XX"],flags["YY"],flags["ZZ"])
@@ -5785,52 +5785,52 @@ do
 		end 
 	end  
 	-- 
-	function Lynx:RotateCursor() 
+	function QUASAR:RotateCursor() 
 		if flags["Da Hood Cursor Spin"] then 
 			LocalPlayer.PlayerGui.MainScreenGui.Aim.Rotation = LocalPlayer.PlayerGui.MainScreenGui.Aim.Rotation + flags["Cursor Spin Speed for DH"]
 		end 
 	end 
 	-- 
-	function Lynx:SilentAim()
+	function QUASAR:SilentAim()
 		if flags["Silent Aim Enabled"] and flags["Silent Aim Key"].Active then 
-			Lynx.Silent.Check = true 
+			QUASAR.Silent.Check = true 
 			-- 
 			if flags["Silent Aim Type"] ~= "Target Aim" and flags["RageBot"] == false then 
-				Lynx.Silent.Target = Lynx:GetClosestPlayer()
+				QUASAR.Silent.Target = QUASAR:GetClosestPlayer()
 			elseif (flags["RageBot"] == true) then 
-				Lynx.Silent.Target = Lynx:findNearestTargetInRadius(LocalPlayer.Character.HumanoidRootPart.Position, math.huge)
+				QUASAR.Silent.Target = QUASAR:findNearestTargetInRadius(LocalPlayer.Character.HumanoidRootPart.Position, math.huge)
 			end 
 			-- 
-			if Lynx.Silent.Target and Lynx.Silent.Target.Character and Lynx:GetPlayerStatus() then 
-				if (Find(flags["Silent_Aim_Checks"], "Wall") and not Lynx:RayCast(Lynx.Silent.Target.Character.HumanoidRootPart, Lynx:GetOrigin("Handle"), {Lynx:GetCharacter(LocalPlayer)})) then Lynx.Silent.Check = false end
-				if (Find(flags["Silent_Aim_Checks"], "Visible") and (Lynx.Silent.Target.Character.HumanoidRootPart.Transparency ~= 1)) then Lynx.Silent.Check = false end 
-				if (Find(flags["Silent_Aim_Checks"], "ForceField") and Lynx.Silent.Target.Character.HumanoidRootPart:FindFirstChildOfClass("ForceField")) then Lynx.Silent.Check = false end
-				if (Find(flags["Silent_Aim_Checks"], "Knocked") and not Lynx:KnockCheck(Lynx.Silent.Target)) then Lynx.Silent.Check = false end
+			if QUASAR.Silent.Target and QUASAR.Silent.Target.Character and QUASAR:GetPlayerStatus() then 
+				if (Find(flags["Silent_Aim_Checks"], "Wall") and not QUASAR:RayCast(QUASAR.Silent.Target.Character.HumanoidRootPart, QUASAR:GetOrigin("Handle"), {QUASAR:GetCharacter(LocalPlayer)})) then QUASAR.Silent.Check = false end
+				if (Find(flags["Silent_Aim_Checks"], "Visible") and (QUASAR.Silent.Target.Character.HumanoidRootPart.Transparency ~= 1)) then QUASAR.Silent.Check = false end 
+				if (Find(flags["Silent_Aim_Checks"], "ForceField") and QUASAR.Silent.Target.Character.HumanoidRootPart:FindFirstChildOfClass("ForceField")) then QUASAR.Silent.Check = false end
+				if (Find(flags["Silent_Aim_Checks"], "Knocked") and not QUASAR:KnockCheck(QUASAR.Silent.Target)) then QUASAR.Silent.Check = false end
 				-- 
-				Lynx.Silent.HitPart = ((flags["Air Prediction Method"] == "Part" and Lynx.Silent.Target.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall) and flags["Air Prediction Part"]) or Lynx:GetClosestPart(Lynx.Silent.Target, flags["Silent Aim HitPart"]).Name
-				Lynx.Silent.Prediction = (flags["Auto-Prediction"] and Lynx:AutoPrediction()) or Lynx.Silent.Prediction
+				QUASAR.Silent.HitPart = ((flags["Air Prediction Method"] == "Part" and QUASAR.Silent.Target.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall) and flags["Air Prediction Part"]) or QUASAR:GetClosestPart(QUASAR.Silent.Target, flags["Silent Aim HitPart"]).Name
+				QUASAR.Silent.Prediction = (flags["Auto-Prediction"] and QUASAR:AutoPrediction()) or QUASAR.Silent.Prediction
 				--
-				if not Lynx.Silent.HitPart then return end 
+				if not QUASAR.Silent.HitPart then return end 
 				-- 
 				if (flags["Resolver"] == true and flags["Resolver Key"].Active == true) then 
-					Lynx.Silent.Resolver[1] = Lynx:CalculateAbsolutePosition(Lynx.Silent.Target)
+					QUASAR.Silent.Resolver[1] = QUASAR:CalculateAbsolutePosition(QUASAR.Silent.Target)
 				end 
 				-- 
 				if flags["Bypass Aim Viewer"] then 
-					local Offset = (flags["Air Prediction Method"] == "Offset" and Lynx.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, Lynx.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
+					local Offset = (flags["Air Prediction Method"] == "Offset" and QUASAR.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, QUASAR.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
 					-- 
-					if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and Lynx.Silent.Resolver[1]) then 
-						Lynx.Silent.Position = (Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Resolver[1] * Lynx.Silent.Prediction) + Offset) 
+					if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and QUASAR.Silent.Resolver[1]) then 
+						QUASAR.Silent.Position = (QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Resolver[1] * QUASAR.Silent.Prediction) + Offset) 
 					else 
-						Lynx.Silent.Position = (Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Target.Character.HumanoidRootPart.Velocity * Lynx.Silent.Prediction) + Offset) 
+						QUASAR.Silent.Position = (QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Target.Character.HumanoidRootPart.Velocity * QUASAR.Silent.Prediction) + Offset) 
 					end 
 				end 
 				-- 
-				if Lynx.Silent.Position then 
+				if QUASAR.Silent.Position then 
 					if flags["Auto-Shoot"] then 
-						local Tool = Lynx:GetTool()
+						local Tool = QUASAR:GetTool()
 						if Tool and Tool:FindFirstChild("Ammo") and Tool:FindFirstChild("Ammo") ~= 0 then
-							if (Lynx.Silent.Check == true) and InputService:GetFocusedTextBox() == nil then  
+							if (QUASAR.Silent.Check == true) and InputService:GetFocusedTextBox() == nil then  
 								VirtualUser:Button1Down(Vector2.new(), Workspace.CurrentCamera.CFrame)
 								RunService.RenderStepped:Wait()
 								VirtualUser:Button1Down(Vector2.new(), Workspace.CurrentCamera.CFrame)
@@ -5845,16 +5845,16 @@ do
 						end 
 					end
 					-- 
-					local Position1, OnScreen = Camera:WorldToViewportPoint(Lynx.Silent.Position)
+					local Position1, OnScreen = Camera:WorldToViewportPoint(QUASAR.Silent.Position)
 					local MousePosition = NewVector2(Mouse.X, Mouse.Y + 36)
 					local Magn = (MousePosition - NewVector2(Position1.X, Position1.Y)).Magnitude
 					-- 
 					if utility.Renders[1].Visible then 
-						if (Magn >= utility.Renders[1].Radius) then  Lynx.Silent.Check = false end 
+						if (Magn >= utility.Renders[1].Radius) then  QUASAR.Silent.Check = false end 
 					end
 					-- 
 					if flags["Visualize Part Enabled"] then 
-						utility.Parts[1].CFrame = flags["Show Prediction"] and CFrame.new(Lynx.Silent.Position) or Lynx.Silent.Target.Character.HumanoidRootPart.CFrame 
+						utility.Parts[1].CFrame = flags["Show Prediction"] and CFrame.new(QUASAR.Silent.Position) or QUASAR.Silent.Target.Character.HumanoidRootPart.CFrame 
 						utility.Parts[1].Material = Enum.Material[flags["Part Material"]]
 					else 
 						utility.Parts[1].CFrame = CFrame.new(999,999,999)
@@ -5864,15 +5864,15 @@ do
 						if game.Workspace.Terrain["Backtrack"].Model == nil then return end 
 						for _, Value in pairs(game.Workspace.Terrain["Backtrack"].Model:GetChildren()) do 
 							if Value:IsA("BasePart") then 
-								Value.Position = Lynx.Silent.Target.Character[Value.Name].Position + Lynx.Silent.Target.Character.HumanoidRootPart.Velocity * Lynx.Silent.Prediction
-								Value.Rotation = Lynx.Silent.Target.Character[Value.Name].Rotation
+								Value.Position = QUASAR.Silent.Target.Character[Value.Name].Position + QUASAR.Silent.Target.Character.HumanoidRootPart.Velocity * QUASAR.Silent.Prediction
+								Value.Rotation = QUASAR.Silent.Target.Character[Value.Name].Rotation
 							end     
 						end 						
 					end
 					-- 
 					if flags["Look-At"] then 
 						LocalPlayer.Character.Humanoid.AutoRotate = false 
-						local NearestPos = CFrame.new(LocalPlayer.Character.PrimaryPart.Position, Vector3.new(Lynx.Silent.Target.Character.HumanoidRootPart.Position.X, LocalPlayer.Character.PrimaryPart.Position.Y, Lynx.Silent.Target.Character.HumanoidRootPart.Position.Z))
+						local NearestPos = CFrame.new(LocalPlayer.Character.PrimaryPart.Position, Vector3.new(QUASAR.Silent.Target.Character.HumanoidRootPart.Position.X, LocalPlayer.Character.PrimaryPart.Position.Y, QUASAR.Silent.Target.Character.HumanoidRootPart.Position.Z))
 						LocalPlayer.Character:SetPrimaryPartCFrame(NearestPos)
 					end 
 					-- 
@@ -5907,31 +5907,31 @@ do
 		end 
 	end 
 	-- 
-	Lynx.AimViwerBypass = function()
+	QUASAR.AimViwerBypass = function()
         if flags["Bypass Aim Viewer"] then 
 			if flags["Silent Aim Enabled"] and flags["Silent Aim Key"].Active then 
-				local Offset = (flags["Air Prediction Method"] == "Offset" and Lynx.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, Lynx.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
+				local Offset = (flags["Air Prediction Method"] == "Offset" and QUASAR.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, QUASAR.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
 				--
-				if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and Lynx.Silent.Resolver[1]) then 
-					ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Resolver[1] * Lynx.Silent.Prediction) + Offset) 
+				if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and QUASAR.Silent.Resolver[1]) then 
+					ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Resolver[1] * QUASAR.Silent.Prediction) + Offset) 
 				else 
-					ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Target.Character.HumanoidRootPart.Velocity * Lynx.Silent.Prediction) + Offset) 
+					ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Target.Character.HumanoidRootPart.Velocity * QUASAR.Silent.Prediction) + Offset) 
 				end 
 			end 
         end 
     end
 	-- 
-	function Lynx:AimAssist()
-		if flags["Aim Assist Enabled"] and flags["Aim Assist Key"].Active and Lynx.Assist.Target and Lynx:GetPlayerStatus(Lynx.Assist.Target) then 
-			local Char, Humanoid, RootPart = Lynx:ValidateClient(Lynx.Assist.Target)
+	function QUASAR:AimAssist()
+		if flags["Aim Assist Enabled"] and flags["Aim Assist Key"].Active and QUASAR.Assist.Target and QUASAR:GetPlayerStatus(QUASAR.Assist.Target) then 
+			local Char, Humanoid, RootPart = QUASAR:ValidateClient(QUASAR.Assist.Target)
 			if Char and Humanoid and RootPart then 
 				-- 
 				if not flags["Sticky Aim"] then 
-					Lynx.Assist.Target = Lynx:GetClosestPlayer()
+					QUASAR.Assist.Target = QUASAR:GetClosestPlayer()
 				end 
 				--
 				local MousePosition = NewVector2(Mouse.X, Mouse.Y + 36)
-				local HitPart = Lynx:GetClosestPart(Lynx.Assist.Target, flags["Aim Assist HitPart"]).Name
+				local HitPart = QUASAR:GetClosestPart(QUASAR.Assist.Target, flags["Aim Assist HitPart"]).Name
 				local Prediction = flags["Aim Assist Prediction"] or 0 
 				local Shake = flags["Camera Shake"] and NewVector3(Random(0, flags["X"] * 20)/50, Random(0, flags["Y"] * 20)/50, Random(0, flags["Z"] * 20)/50) or NewVector3(0, 0, 0)
 				--
@@ -5948,12 +5948,12 @@ do
 					if (Magn <= flags["Deadzone Radius"]) then return end 
 				end 
 				-- Dropdown Checks
-				if ((Find(flags["Aim_Assist_Checks"], "Wall")) and not Lynx:RayCast(Char[HitPart], Lynx:GetOrigin("Torso"), {Lynx:GetCharacter(LocalPlayer)})) then return end
-				if ((Find(flags["Aim_Assist_Checks"], "Alive")) and not Lynx:ClientAlive(Lynx.Assist.Target, Char, Humanoid)) then return end
-				if ((Find(flags["Aim_Assist_Checks"], "Team")) and not (Lynx:CheckTeam(LocalPlayer, Lynx.Assist.Target))) then return end
+				if ((Find(flags["Aim_Assist_Checks"], "Wall")) and not QUASAR:RayCast(Char[HitPart], QUASAR:GetOrigin("Torso"), {QUASAR:GetCharacter(LocalPlayer)})) then return end
+				if ((Find(flags["Aim_Assist_Checks"], "Alive")) and not QUASAR:ClientAlive(QUASAR.Assist.Target, Char, Humanoid)) then return end
+				if ((Find(flags["Aim_Assist_Checks"], "Team")) and not (QUASAR:CheckTeam(LocalPlayer, QUASAR.Assist.Target))) then return end
 				if ((Find(flags["Aim_Assist_Checks"], "ForceField")) and Char:FindFirstChildOfClass("ForceField")) then return end 
 				if (not ((Camera.CFrame.Position - RootPart.Position).Magnitude <= flags["Aim Assist Distance"])) then return end
-				if (Find(flags["Aim_Assist_Checks"], "Knocked") and not Lynx:KnockCheck(Lynx.Assist.Target)) then return end
+				if (Find(flags["Aim_Assist_Checks"], "Knocked") and not QUASAR:KnockCheck(QUASAR.Assist.Target)) then return end
 
 				-- Moving Camera
 				if ((Tick - utility.LastTick) >= (flags["Stutter Amount"] / 1000)) then 
@@ -5964,8 +5964,8 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:AntiLock()
-		local Character, Humanoid, RootPart = Lynx:ValidateClient(LocalPlayer)
+	function QUASAR:AntiLock()
+		local Character, Humanoid, RootPart = QUASAR:ValidateClient(LocalPlayer)
 		if Character and Humanoid and RootPart then 
 			utility.Desyncs.OldVelocity = LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
 			utility.Desyncs.OldCFrame = LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -5988,9 +5988,9 @@ do
 				-- 
 				LocalPlayer.Character.HumanoidRootPart.CFrame = CFramePositions[flags["CFrame Desync Preset"]] * NewCFrame(flags["XXX"], flags["YYY"], flags["ZZZ"]) * NewAngle(Rad(flags["X Rotation"]), Rad(flags["Y Rotation"]), Rad(flags["Z Rotation"]))
 				-- 
-				if flags["Target Strafe"] and Lynx.Silent.Target and flags["Silent Aim Enabled"] and flags["Silent Aim Key"].Active and Lynx:GetPlayerStatus(Lynx.Silent.Target) then 
+				if flags["Target Strafe"] and QUASAR.Silent.Target and flags["Silent Aim Enabled"] and flags["Silent Aim Key"].Active and QUASAR:GetPlayerStatus(QUASAR.Silent.Target) then 
 					utility.Angle += flags["Target Strafe Speed"]
-					LocalPlayer.Character.HumanoidRootPart.CFrame = Lynx.Silent.Target.Character.HumanoidRootPart.CFrame * NewAngle(0, Rad(utility.Angle), 0) * NewCFrame(0, flags["Target Strafe Height"], flags["Target Strafe Radius"])
+					LocalPlayer.Character.HumanoidRootPart.CFrame = QUASAR.Silent.Target.Character.HumanoidRootPart.CFrame * NewAngle(0, Rad(utility.Angle), 0) * NewCFrame(0, flags["Target Strafe Height"], flags["Target Strafe Radius"])
 				end 
 				-- 
 				if flags["Visualize CFrame Desync"] then 
@@ -6007,8 +6007,8 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:GunSound() 
-		local Tool = Lynx:GetTool()
+	function QUASAR:GunSound() 
+		local Tool = QUASAR:GetTool()
 		-- 
 		if Tool and Tool:FindFirstChild("Handle") and flags["Custom Gun Sounds"] and Tool:FindFirstChild("Ammo") then 
 			for _, Value in pairs(Tool.Handle:GetChildren()) do 
@@ -6019,7 +6019,7 @@ do
 		end 	
 	end 
 	-- 
-	function Lynx:WorldVisuals() 
+	function QUASAR:WorldVisuals() 
 		if flags["World Visuals Enabled"] == true then 
 			if flags["Ambient Enabled"] then 
                 if Lighting.Ambient ~= flags["Ambient1 Color"].Color then 
@@ -6059,11 +6059,11 @@ do
 		end 
 	end 
 	-- 
-	function Lynx:AutoPrediction()
+	function QUASAR:AutoPrediction()
 		local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
     	local split = string.split(pingvalue,'(')
     	local ping = tonumber(split[1])
-		local Predictions = readfile("Lynx/Assets/Auto Prediction.txt"):split("\n")
+		local Predictions = readfile("QUASAR/Assets/Auto Prediction.txt"):split("\n")
 		--  
 		local Prediction = nil 
 		--
@@ -6085,26 +6085,26 @@ do
 	end 
 end 
 -- Main Loop
-Lynx:Connection(RunService.Heartbeat, LPH_JIT(function(Frame)
-	Lynx:Cursor(Frame)
+QUASAR:Connection(RunService.Heartbeat, LPH_JIT(function(Frame)
+	QUASAR:Cursor(Frame)
 	-- 
-	Lynx:SilentAim()
+	QUASAR:SilentAim()
 	-- 
-	Lynx:Speed()
+	QUASAR:Speed()
 	-- 
-	if flags["Target Strafe"] and Lynx.Silent.Target ~= nil and flags["Silent Aim Enabled"] == true and flags["Silent Aim Key"].Active and flags["CFrame Desync"] == false then 
+	if flags["Target Strafe"] and QUASAR.Silent.Target ~= nil and flags["Silent Aim Enabled"] == true and flags["Silent Aim Key"].Active and flags["CFrame Desync"] == false then 
 		utility.Angle += flags["Target Strafe Speed"]
-		LocalPlayer.Character.HumanoidRootPart.CFrame = Lynx.Silent.Target.Character.HumanoidRootPart.CFrame * NewAngle(0, Rad(utility.Angle), 0) * NewCFrame(0, flags["Target Strafe Height"], flags["Target Strafe Radius"])
+		LocalPlayer.Character.HumanoidRootPart.CFrame = QUASAR.Silent.Target.Character.HumanoidRootPart.CFrame * NewAngle(0, Rad(utility.Angle), 0) * NewCFrame(0, flags["Target Strafe Height"], flags["Target Strafe Radius"])
 	end 
 	-- 
-	if Lynx:GetPlayerStatus() then 
-		Lynx:AimAssist()
+	if QUASAR:GetPlayerStatus() then 
+		QUASAR:AimAssist()
 		-- 
-		Lynx:RotateCursor() 
+		QUASAR:RotateCursor() 
 		-- 
-		Lynx:GripPosition()
+		QUASAR:GripPosition()
 		-- 
-		Lynx:GunSound() 
+		QUASAR:GunSound() 
 		-- 
 		for _, Script in pairs(LocalPlayer.Character:GetChildren()) do
 			if Script:IsA("Script") and Script.Name ~= "Health" and Script.Name ~= "Sound" and Script:FindFirstChild("LocalScript") then
@@ -6132,16 +6132,16 @@ Lynx:Connection(RunService.Heartbeat, LPH_JIT(function(Frame)
 		Visuals["KeyBindList"]["Drawings"].Gradient.Size = Visuals["KeyBindList"]["Drawings"].Inner.Size
 	end 
 	-- 
-	Lynx:Bhop() 
-	Lynx:Fly() 	
+	QUASAR:Bhop() 
+	QUASAR:Fly() 	
 end))
 -- 
-Lynx:Connection(RunService.Heartbeat, LPH_JIT(function(Frame)
-	Lynx:AntiLock()
+QUASAR:Connection(RunService.Heartbeat, LPH_JIT(function(Frame)
+	QUASAR:AntiLock()
 end)) 
 -- 
 local Tick = tick() 
-Lynx:Connection(RunService.RenderStepped, LPH_JIT(function()
+QUASAR:Connection(RunService.RenderStepped, LPH_JIT(function()
 	if flags["PlayerESP_Enabled"] then 
 		for _,Player in pairs(Players:GetPlayers()) do
 			local PlayerDrawing = Visuals["Drawings"][Player]
@@ -6189,7 +6189,7 @@ Lynx:Connection(RunService.RenderStepped, LPH_JIT(function()
 
 					local distance = Vector3.new().Dot(relativePos.Unit, relativePos)
 					local arrow_dist = flags["PlayerESP_ArrowRadius"]
-					local arrow_size = flags["PlayerESP_ArrowSize"] and Lynx:Map(distance, 1, 100, max_size, size) or size
+					local arrow_size = flags["PlayerESP_ArrowSize"] and QUASAR:Map(distance, 1, 100, max_size, size) or size
 					-- 
 					arrow_size = arrow_size > max_size and max_size or arrow_size < size and size or arrow_size
 					direction = Vector2.new(math.cos(angle), math.sin(angle))
@@ -6200,15 +6200,15 @@ Lynx:Connection(RunService.RenderStepped, LPH_JIT(function()
 					end
 					-- 
 					if not pos or pos.y > viewportSize.y - 5 or pos.y < 5 then
-						pos = Lynx:AngleToEdge(angle, 5)
+						pos = QUASAR:AngleToEdge(angle, 5)
 					end
 					-- 
 					Tri.PointA = pos
 					Tri2.PointA = pos  
-					Tri.PointB = pos - Lynx:getRotate(direction, 0.5) * arrow_size 
-					Tri2.PointB = pos - Lynx:getRotate(direction, 0.5) * arrow_size 
-					Tri.PointC = pos - Lynx:getRotate(direction, -0.5) * arrow_size 
-					Tri2.PointC = pos - Lynx:getRotate(direction, -0.5) * arrow_size
+					Tri.PointB = pos - QUASAR:getRotate(direction, 0.5) * arrow_size 
+					Tri2.PointB = pos - QUASAR:getRotate(direction, 0.5) * arrow_size 
+					Tri.PointC = pos - QUASAR:getRotate(direction, -0.5) * arrow_size 
+					Tri2.PointC = pos - QUASAR:getRotate(direction, -0.5) * arrow_size
 					-- 
 					Tri.Color = flags["PlayerESP_ArrowColor"].Color
 					Tri.Transparency = 1 - flags["PlayerESP_ArrowColor"].Alpha
@@ -6454,10 +6454,10 @@ end))
 -- Bullet Tracers, Impacts, Shit Talk
 task.spawn(LPH_JIT(function()
 	while RunService.RenderStepped:Wait() do 
-		utility.Rainbow = {Lynx:Rainbow(flags["Rainbow Speed"]), Lynx:Rainbow(flags["Rainbow Speed"]+1)}
+		utility.Rainbow = {QUASAR:Rainbow(flags["Rainbow Speed"]), QUASAR:Rainbow(flags["Rainbow Speed"]+1)}
 		utility.Sine = Abs(Sin(tick())) + 0.4
 		-- 
-		Lynx:CharacterMaterial()
+		QUASAR:CharacterMaterial()
 		-- 
 		if flags["Auto Buy Armor"] then 
 			if LocalPlayer.Character.BodyEffects.Armor.Value == 0 then 
@@ -6475,24 +6475,24 @@ task.spawn(LPH_JIT(function()
 			end  
 		end  
 		-- 
-		Lynx:WorldVisuals()
+		QUASAR:WorldVisuals()
 		-- 
-		Lynx:GunMaterial()   
+		QUASAR:GunMaterial()   
 		-- 
-		if Lynx:GetPlayerStatus() then 
-			if Lynx["Connections"].Loop ~= nil then 
-				Lynx["Connections"].Loop:Disconnect()
+		if QUASAR:GetPlayerStatus() then 
+			if QUASAR["Connections"].Loop ~= nil then 
+				QUASAR["Connections"].Loop:Disconnect()
 			end 
 		end 
 		-- 
-		if Lynx:GetTool() and Lynx:GetTool():FindFirstChild("Ammo") then 
-			Lynx["Connections"].Loop = Lynx:GetTool().Ammo:GetPropertyChangedSignal("Value"):Connect(function()
-				if Lynx:GetTool().Ammo.Value ~= Lynx:GetTool().MaxAmmo.Value then 
+		if QUASAR:GetTool() and QUASAR:GetTool():FindFirstChild("Ammo") then 
+			QUASAR["Connections"].Loop = QUASAR:GetTool().Ammo:GetPropertyChangedSignal("Value"):Connect(function()
+				if QUASAR:GetTool().Ammo.Value ~= QUASAR:GetTool().MaxAmmo.Value then 
 					pcall(function()
 						if flags["On-Hit-Raycast"] then 
-							Lynx["Connections"]["On-Hit-Raycast"] = Workspace.Ignored.Siren.Radius.DescendantAdded:Connect(function(Beam)
+							QUASAR["Connections"]["On-Hit-Raycast"] = Workspace.Ignored.Siren.Radius.DescendantAdded:Connect(function(Beam)
 								--
-								Lynx["Connections"]["On-Hit-Raycast"]:Disconnect()
+								QUASAR["Connections"]["On-Hit-Raycast"]:Disconnect()
 								--
 								delay(0.05, function()
 									if Beam.Name == "BULLET_RAYS" then 
@@ -6507,14 +6507,14 @@ task.spawn(LPH_JIT(function()
 											
 											if InstanceHit:FindFirstChild("Humanoid") and InstanceHit:FindFirstChild("HumanoidRootPart") then 
 												if flags["Hit Sound"] then 
-													Lynx:HitSound(utility.sfx[flags["Hit Sound Effect"]], flags["Hit Sound Volume"], flags["Hit Sound Pitch"])
+													QUASAR:HitSound(utility.sfx[flags["Hit Sound Effect"]], flags["Hit Sound Volume"], flags["Hit Sound Pitch"])
 												end 
 												-- 
 												if flags["Hit Chams Enabled"] then 
 													if not flags["Optimized Chams"] then 
-														Lynx:CloneCharacter(Players[InstanceHit.Name], flags["Hit Chams Color"].Color, flags["Hit Chams Material"], flags["Hit Chams Color"].Alpha, Workspace.Terrain["HitChams"], flags["Hit Chams Time"])
+														QUASAR:CloneCharacter(Players[InstanceHit.Name], flags["Hit Chams Color"].Color, flags["Hit Chams Material"], flags["Hit Chams Color"].Alpha, Workspace.Terrain["HitChams"], flags["Hit Chams Time"])
 													else 
-														Lynx:CloneCharacter2(Players[InstanceHit.Name], flags["Hit Chams Color"].Color, true, flags["Hit Chams Time"], flags["Hit Chams Material"], flags["Hit Chams Color"].Alpha, Workspace.Terrain["HitChams"])
+														QUASAR:CloneCharacter2(Players[InstanceHit.Name], flags["Hit Chams Color"].Color, true, flags["Hit Chams Time"], flags["Hit Chams Material"], flags["Hit Chams Color"].Alpha, Workspace.Terrain["HitChams"])
 													end 	
 												end
 												-- 
@@ -6527,7 +6527,7 @@ task.spawn(LPH_JIT(function()
 												end 
 												-- 
 												if flags["Hit Effects"] then 
-													Lynx:HitEffect(flags["Hit Effect"], Players[InstanceHit.Name].Character)
+													QUASAR:HitEffect(flags["Hit Effect"], Players[InstanceHit.Name].Character)
 												end 
 											end 
 										end 	
@@ -6538,7 +6538,7 @@ task.spawn(LPH_JIT(function()
 					end)
 					--
 					if flags["Bullet Tracers Enabled"] and flags["Bullet Tracers Mode"] == "Local" then 
-						Lynx:CreateBeam(Lynx:GetTool().Handle.Position, LocalPlayer.Character.BodyEffects.MousePos.Value, flags["Rainbow Bullet Tracers"] and utility.Rainbow[1] or flags["Bullet Tracers Color1"].Color, flags["Rainbow Bullet Tracers"] and utility.Rainbow[2] or flags["Bullet Tracers Color2"].Color, utility.TracerTextures[flags["Bullet Tracers Texture"]])
+						QUASAR:CreateBeam(QUASAR:GetTool().Handle.Position, LocalPlayer.Character.BodyEffects.MousePos.Value, flags["Rainbow Bullet Tracers"] and utility.Rainbow[1] or flags["Bullet Tracers Color1"].Color, flags["Rainbow Bullet Tracers"] and utility.Rainbow[2] or flags["Bullet Tracers Color2"].Color, utility.TracerTextures[flags["Bullet Tracers Texture"]])
 						--
 						RunService.RenderStepped:Wait()
 						--
@@ -6565,7 +6565,7 @@ task.spawn(LPH_JIT(function()
 						end)
 					end					
 					--
-					Lynx["Connections"].Loop:Disconnect()
+					QUASAR["Connections"].Loop:Disconnect()
 				end 
 			end)
 		end 
@@ -6579,8 +6579,8 @@ local function Global_Beam(Beam)
 		if Attachments ~= nil and Attachments[1] ~= nil and Attachments[2] ~= nil then 
 			local Origin = Attachments[1].WorldCFrame
 			local End = Attachments[2].WorldCFrame
-			local Tool = Lynx:GetTool()
-			Lynx:CreateBeam(Origin, End, flags["Rainbow Bullet Tracers"] and utility.Rainbow[1] or flags["Bullet Tracers Color1"].Color, flags["Rainbow Bullet Tracers"] and utility.Rainbow[2] or flags["Bullet Tracers Color2"].Color, utility.TracerTextures[flags["Bullet Tracers Texture"]])
+			local Tool = QUASAR:GetTool()
+			QUASAR:CreateBeam(Origin, End, flags["Rainbow Bullet Tracers"] and utility.Rainbow[1] or flags["Bullet Tracers Color1"].Color, flags["Rainbow Bullet Tracers"] and utility.Rainbow[2] or flags["Bullet Tracers Color2"].Color, utility.TracerTextures[flags["Bullet Tracers Texture"]])
 			Part:Destroy()
 		end 
 	end 
@@ -6606,15 +6606,15 @@ task.spawn(LPH_JIT(function()
 	end 
 end))
 --
-Lynx:Connection(Players.PlayerAdded, LPH_JIT(function(Player)
-    Lynx:Add(Player)
+QUASAR:Connection(Players.PlayerAdded, LPH_JIT(function(Player)
+    QUASAR:Add(Player)
 	-- 
 	if flags["PlayerESP_Chams"] then 
-		Lynx:Cham_Character(Player, flags["Highlight_Fill_Color"].Color, flags["Highlight_Outline_Color"].Color, flags["Highlight_Fill_Color"].Alpha, flags["Highlight_Outline_Color"].Alpha) 
+		QUASAR:Cham_Character(Player, flags["Highlight_Fill_Color"].Color, flags["Highlight_Outline_Color"].Color, flags["Highlight_Fill_Color"].Alpha, flags["Highlight_Outline_Color"].Alpha) 
 	end  
 end))
 -- 
-Lynx:Connection(Players.PlayerRemoving, LPH_JIT(function(Player)
+QUASAR:Connection(Players.PlayerRemoving, LPH_JIT(function(Player)
     if Visuals["Drawings"][Player] or Visuals["Drawings"][Player]["Corners"] then
         for Index, Drawing in pairs(Visuals["Drawings"][Player]) do
             if Drawing and Index ~= "Corners" then 
@@ -6630,16 +6630,16 @@ Lynx:Connection(Players.PlayerRemoving, LPH_JIT(function(Player)
         Visuals["Drawings"][Player] = nil
     end
 	-- 
-	if Find(flags["Silent Aim Notify"], "Left") and Lynx.Silent.Target ~= nil and Player == Lynx.Silent.Target then 
-		ui:Notify{text = "Locked user has left: ".. Lynx.Silent.Target.Name.. " (".. Lynx.Silent.Target.DisplayName .. ")", time = 2, style = "loading"}
+	if Find(flags["Silent Aim Notify"], "Left") and QUASAR.Silent.Target ~= nil and Player == QUASAR.Silent.Target then 
+		ui:Notify{text = "Locked user has left: ".. QUASAR.Silent.Target.Name.. " (".. QUASAR.Silent.Target.DisplayName .. ")", time = 2, style = "loading"}
 	end 
 	-- 
 	if flags["PlayerESP_Chams"] then 
-		Lynx:Cham_Remove(Player)
+		QUASAR:Cham_Remove(Player)
 	end 
 end))
 -- Cursor, FOVs
-Lynx:Connection(InputService.InputChanged, LPH_JIT(function(input, typing)
+QUASAR:Connection(InputService.InputChanged, LPH_JIT(function(input, typing)
     if flags["Cursor"] then 
         if not flags["Spin"] then 
             InputService.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.ForceHide
@@ -6746,7 +6746,7 @@ end)
 --
 for Index, Player in pairs(Players:GetPlayers()) do
     if Player ~= LocalPlayer then
-        Lynx:Add(Player)
+        QUASAR:Add(Player)
     end
 end
 -- 
@@ -6763,16 +6763,16 @@ Old = hookmetamethod(game, "__namecall", LPH_JIT(function(self, ...)
 		end 
 		--
 		if flags["Silent Aim Enabled"] and flags["Silent Aim Key"].Active and args[1] == "UpdateMousePos" and not flags["Bypass Aim Viewer"] then 
-			if Lynx.Silent.Target ~= nil and Lynx.Silent.Target.Character ~= nil and Lynx.Silent.Target.Character.HumanoidRootPart ~= nil and Lynx.Silent.Check == true and Lynx.Silent.HitPart and Lynx.Silent.Target.Character.Head then 
-				local Offset = (flags["Air Prediction Method"] == "Offset" and Lynx.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, Lynx.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
+			if QUASAR.Silent.Target ~= nil and QUASAR.Silent.Target.Character ~= nil and QUASAR.Silent.Target.Character.HumanoidRootPart ~= nil and QUASAR.Silent.Check == true and QUASAR.Silent.HitPart and QUASAR.Silent.Target.Character.Head then 
+				local Offset = (flags["Air Prediction Method"] == "Offset" and QUASAR.Silent.Target.Character.Humanoid.FloorMaterial == Enum.Material.Air) and NewVector3(0.0001, QUASAR.Silent.Offset, 0.0001) or NewVector3(0.001, 0.001, 0.001)
 				--
-				if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and Lynx.Silent.Resolver[1] ~= nil) then 
-					args[2] = Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Resolver[1] * Lynx.Silent.Prediction) + Offset 
+				if (flags["Resolver"] == true and flags["Resolver Key"].Active == true and QUASAR.Silent.Resolver[1] ~= nil) then 
+					args[2] = QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Resolver[1] * QUASAR.Silent.Prediction) + Offset 
 				else 
-					args[2] = Lynx.Silent.Target.Character[Lynx.Silent.HitPart].Position + (Lynx.Silent.Target.Character.HumanoidRootPart.Velocity * Lynx.Silent.Prediction) + Offset 
+					args[2] = QUASAR.Silent.Target.Character[QUASAR.Silent.HitPart].Position + (QUASAR.Silent.Target.Character.HumanoidRootPart.Velocity * QUASAR.Silent.Prediction) + Offset 
 				end 
 				-- 
-				Lynx.Silent.Position = args[2]
+				QUASAR.Silent.Position = args[2]
 				-- 
 				return Old(self, unpack(args))
 			end 
@@ -6784,7 +6784,7 @@ end))
 local old
 old = hookmetamethod(game, "__index", LPH_JIT(function(Self, Key)
 	if not checkcaller() then
-		if Key == "CFrame" and flags["CFrame Desync"] and flags["CFrame Desync Key"].Active and Lynx:GetPlayerStatus(LocalPlayer) then
+		if Key == "CFrame" and flags["CFrame Desync"] and flags["CFrame Desync Key"].Active and QUASAR:GetPlayerStatus(LocalPlayer) then
 			if Self == LocalPlayer.Character.HumanoidRootPart then 
 				return utility.Desyncs.OldCFrame
 			end 
