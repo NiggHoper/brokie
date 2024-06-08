@@ -39,15 +39,7 @@ getgenv().Lynx, getgenv().Visuals, getgenv().utility =
 	["Locals"] = { 
 		Window = {},
 	},
-	["Silent"] = {
-		Target = nil,
-		Check = true,
-		Prediction = 0, 
-		Resolver = {false, nil}, 
-		Offset = 0, 
-		Check = true, 
-		Hitpart = nil, 
-		Position = nil,
+	
 	},
 	["Assist"] = {
 		Target = nil,
