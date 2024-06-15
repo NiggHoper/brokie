@@ -1,8 +1,6 @@
 --[[
 
-	AirHub by Exunys © CC0 1.0 Universal (2023)
-
-	https://github.com/Exunys
+	Quasar made by ski // creds to thepo and tracks
 
 ]]
 
@@ -22,8 +20,8 @@ getgenv().AirHub = {}
 
 --// Load Modules
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NiggHoper/brokie/main/libreria%201"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NiggHoper/brokie/main/penenew"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/Modules/Aimbot.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/Modules/Wall%20Hack.lua"))()
 
 --// Variables
 
@@ -905,6 +903,7 @@ FunctionsSection:AddButton({
 		setclipboard("https://github.com/Exunys/AirHub")
 	end
 })
+
 --// AirHub V2 Prompt
 
 do
@@ -928,5 +927,4 @@ do
 		Icon = "rbxassetid://6238537240",
 		Callback = Aux
 	})
-
 end
